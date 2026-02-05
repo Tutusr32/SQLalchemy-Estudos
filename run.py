@@ -9,8 +9,7 @@ with DBConnectionHandler() as db:
     filmes = db.session.query(Filmes).all()
 
     for filme in filmes:
-        print(filme.titulo)
+        print({filme.titulo})
 
         for ator in filme.atores:
-            print("  ->", ator.nome)
-    
+            print(f"  -> {ator.id} - {ator.nome}")

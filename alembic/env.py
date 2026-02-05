@@ -14,7 +14,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-db_url = 'mysql+pymysql://app_user:my_pw@localhost:3306/cinema'
+db_url = 'exemplo de engine'
 
 config.set_main_option('sqlalchemy.url', db_url)
 
